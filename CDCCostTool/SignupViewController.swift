@@ -1,9 +1,7 @@
 //
 //  SignupViewController.swift
 //  CDCCostTool
-//
-//  Created by Indira Sajja on 2/28/19.
-//  Copyright © 2019 Erica Millado. All rights reserved.
+// 
 //
 
 import UIKit
@@ -12,8 +10,10 @@ class SignupViewController: UIViewController,UIPickerViewDelegate, UIPickerViewD
     
     @IBOutlet weak var rolePicker: UIPickerView!
     @IBOutlet weak var leadContact: UISwitch!
+    var row = 0;
     
     var pickerData: [String] = [String]()
+    let signupData = SignUpData()
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         //<#code#>
         return 1;
@@ -28,8 +28,6 @@ class SignupViewController: UIViewController,UIPickerViewDelegate, UIPickerViewD
         return pickerData[row]
     }
     
-    //Properties
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -38,7 +36,15 @@ class SignupViewController: UIViewController,UIPickerViewDelegate, UIPickerViewD
         // Input the data into the array
         pickerData = ["Role 1", "Role 2", "Role 3", "Role 4", "Role 5", "Role 6"]
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController2 = segue.destination as? SignupForm2ViewController {
+            row = rolePicker.selectedRow(inComponent: 0);
+            print(row);
+            signupData.role = pickerData[row];
+            signupData.isLeadContact = leadContact.isOn;
+            viewController2.signupData = signupData;
+        }
+    }
     
 }
 

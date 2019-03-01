@@ -2,10 +2,7 @@
 //  RetrospectiveFormViewController.swift
 //  CDCCostTool
 //
-//  Created by Indira Sajja on 3/1/19.
-//  Copyright © 2019 Erica Millado. All rights reserved.
-//
-
+ 
 import UIKit
 
 class RetrospectFormViewController: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {

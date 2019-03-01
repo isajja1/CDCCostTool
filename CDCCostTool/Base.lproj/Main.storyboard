@@ -156,7 +156,7 @@
                                     <color key="titleColor" red="0.89019607840000003" green="0.94901960780000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wkD-0L-4pm" kind="show" id="4F5-vt-V9x"/>
+                                    <segue destination="wkD-0L-4pm" kind="show" identifier="signup1" id="4F5-vt-V9x"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Role" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbj-Ay-MBB">
@@ -250,7 +250,7 @@
         <!--Cost Outbreak Signup2-->
         <scene sceneID="VaD-lU-wdl">
             <objects>
-                <viewController id="wkD-0L-4pm" userLabel="Cost Outbreak Signup2" sceneMemberID="viewController">
+                <viewController id="wkD-0L-4pm" userLabel="Cost Outbreak Signup2" customClass="SignupForm2ViewController" customModule="CDCCostTool" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nls-UV-tDp"/>
                         <viewControllerLayoutGuide type="bottom" id="jgm-Bj-Msr"/>
@@ -502,7 +502,7 @@
         <!--LabViewController-->
         <scene sceneID="Ecf-Vb-6Hh">
             <objects>
-                <viewController id="KHh-cH-dSU" userLabel="LabViewController" sceneMemberID="viewController">
+                <viewController id="KHh-cH-dSU" userLabel="LabViewController" customClass="LabViewController" customModule="CDCCostTool" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZGD-Ix-2P1"/>
                         <viewControllerLayoutGuide type="bottom" id="Ili-Y9-Ryw"/>
@@ -510,12 +510,95 @@
                     <view key="view" contentMode="scaleToFill" id="K76-KE-BVq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.23529411759999999" green="0.3921568627" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What tests did you complete today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYr-BB-Qkz">
+                                <rect key="frame" x="16" y="159" width="311" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lab" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahF-aO-xvy">
+                                <rect key="frame" x="23" y="72" width="328" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKC-Dr-Mdr">
+                                <rect key="frame" x="59" y="242" width="47" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Quantity" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mny-3r-xUf" userLabel="Total Hours Text">
+                                <rect key="frame" x="180" y="242" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qz-9t-13G">
+                                <rect key="frame" x="59" y="300" width="50" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQv-XM-Jz7">
+                                <rect key="frame" x="59" y="363" width="50" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Quantity" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EPl-ZA-ATZ" userLabel="Total Hours Text">
+                                <rect key="frame" x="180" y="358" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytb-x4-viv">
+                                <rect key="frame" x="115" y="466" width="144" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.027450980390000001" green="0.32156862749999998" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleColor" red="0.89019607840000003" green="0.94901960780000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClick:" destination="Ej9-0B-zqb" eventType="touchUpInside" id="JT3-dl-S73"/>
+                                    <action selector="onClick:" destination="KHh-cH-dSU" eventType="touchUpInside" id="q3F-lr-hHb"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Quantity" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="41b-XC-oOC" userLabel="Total Hours Text">
+                                <rect key="frame" x="180" y="296" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.94901960780000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="type1Quantity" destination="Mny-3r-xUf" id="lnW-Up-ReP"/>
+                        <outlet property="type2Quantity" destination="41b-XC-oOC" id="WZN-jn-VE4"/>
+                        <outlet property="type3Quantity" destination="EPl-ZA-ATZ" id="mSy-WC-Vdk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7F9-4C-9Qr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ej9-0B-zqb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1740" y="915"/>
+            <point key="canvasLocation" x="1740" y="914.392803598201"/>
         </scene>
         <!--ProspectView Controller-->
         <scene sceneID="vi7-hS-Jbs">
@@ -688,7 +771,7 @@
                                 <rect key="frame" x="37" y="280" width="300" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Leadership and laboratory supervisor staff time is often overlooked in costing studies. If any local or state level agency leadership are provided updates on the outbreak, involved in decisions, or themselves met with key stakeholders (e.g., providing updates to state officials or the media, making calls with any companies or institutions involved), these hours should be included up to the highest office involved (e.e the governor). Similarly time spent by laboratory supervisors overseeing or consulting on the outbreak related testing and the investigation should also be included.</mutableString>
+                                <string key="text">Leadership and laboratory supervisor staff time is often overlooked in costing studies. If any local or state level agency leadership are provided updates on the outbreak, involved in decisions, or themselves met with key stakeholders (e.g., providing updates to state officials or the media, making calls with any companies or institutions involved), these hours should be included up to the highest office involved (e.e the governor). Similarly time spent by laboratory supervisors overseeing or consulting on the outbreak related testing and the investigation should also be included.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
