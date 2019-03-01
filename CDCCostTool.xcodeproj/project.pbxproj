@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1C05876B222399CF0019B991 /* ProspectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C05876A222399CF0019B991 /* ProspectViewController.swift */; };
 		1C05876D22239A760019B991 /* ProspectFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C05876C22239A760019B991 /* ProspectFormViewController.swift */; };
+		1CEC2CFF2228B8B1008F6387 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEC2CFE2228B8B1008F6387 /* SignupViewController.swift */; };
+		1CEC2D012228C987008F6387 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEC2D002228C987008F6387 /* LoginViewController.swift */; };
+		1CEC2D032228CD8F008F6387 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEC2D022228CD8F008F6387 /* MainNavigationController.swift */; };
 		454751C11F19856F002AC524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454751C01F19856F002AC524 /* AppDelegate.swift */; };
 		454751C31F19856F002AC524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454751C21F19856F002AC524 /* ViewController.swift */; };
 		454751C61F19856F002AC524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454751C41F19856F002AC524 /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* Begin PBXFileReference section */
 		1C05876A222399CF0019B991 /* ProspectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectViewController.swift; sourceTree = "<group>"; };
 		1C05876C22239A760019B991 /* ProspectFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectFormViewController.swift; sourceTree = "<group>"; };
+		1CEC2CFE2228B8B1008F6387 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		1CEC2D002228C987008F6387 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1CEC2D022228CD8F008F6387 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		454751BD1F19856F002AC524 /* CDCCostTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDCCostTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454751C01F19856F002AC524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		454751C21F19856F002AC524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,9 +66,12 @@
 			children = (
 				454751C01F19856F002AC524 /* AppDelegate.swift */,
 				454751C21F19856F002AC524 /* ViewController.swift */,
+				1CEC2D002228C987008F6387 /* LoginViewController.swift */,
 				1C05876A222399CF0019B991 /* ProspectViewController.swift */,
 				1C05876C22239A760019B991 /* ProspectFormViewController.swift */,
+				1CEC2CFE2228B8B1008F6387 /* SignupViewController.swift */,
 				454751C41F19856F002AC524 /* Main.storyboard */,
+				1CEC2D022228CD8F008F6387 /* MainNavigationController.swift */,
 				454751C71F19856F002AC524 /* Assets.xcassets */,
 				454751C91F19856F002AC524 /* LaunchScreen.storyboard */,
 				454751CC1F19856F002AC524 /* Info.plist */,
@@ -144,8 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CEC2D012228C987008F6387 /* LoginViewController.swift in Sources */,
 				1C05876D22239A760019B991 /* ProspectFormViewController.swift in Sources */,
 				454751C31F19856F002AC524 /* ViewController.swift in Sources */,
+				1CEC2CFF2228B8B1008F6387 /* SignupViewController.swift in Sources */,
+				1CEC2D032228CD8F008F6387 /* MainNavigationController.swift in Sources */,
 				1C05876B222399CF0019B991 /* ProspectViewController.swift in Sources */,
 				454751C11F19856F002AC524 /* AppDelegate.swift in Sources */,
 			);
