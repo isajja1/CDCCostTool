@@ -8,6 +8,7 @@ import UIKit
 
 class SignupViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource {
     
+    @IBOutlet weak var agency: UITextField!
     @IBOutlet weak var rolePicker: UIPickerView!
     @IBOutlet weak var leadContact: UISwitch!
     var row = 0;
