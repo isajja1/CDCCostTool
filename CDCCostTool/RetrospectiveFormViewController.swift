@@ -1,15 +1,23 @@
- 
+//
+//  RetrospectiveFormViewController.swift
+//  CDCCostTool
+//
+//  Created by Indira Sajja on 3/1/19.
+//  Copyright © 2019 Erica Millado. All rights reserved.
+//
+
 import UIKit
 
-class ProspectFormViewController: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class RetrospectFormViewController: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var rootVC: UIViewController?
     
+    
     @IBOutlet weak var totalHours: UITextField!
     
-    @IBOutlet weak var taskPicker: UIPickerView!
     
     @IBOutlet weak var confidencePicker: UIPickerView!
+    @IBOutlet weak var taskPicker: UIPickerView!
     
     var taskData: [String] = [String]()
     var confidenceData: [String] = [String] ()
@@ -59,4 +67,4 @@ class ProspectFormViewController: ViewController, UIPickerViewDelegate, UIPicker
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window?.rootViewController = rootVC
     }
- }
+}
